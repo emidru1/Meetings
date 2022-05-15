@@ -22,10 +22,10 @@ namespace Meetings
             return meetings;
         }
         /// <summary>
-        /// Write 
+        /// Write meetings to the file 
         /// </summary>
-        /// <param name="fileName"></param>
-        /// <param name="meeting"></param>
+        /// <param name="fileName">Result file name</param>
+        /// <param name="meeting">List of meetings</param>
         public static void WriteMeetings(string fileName, List<Meeting> meeting)
         {
             string json = JsonConvert.SerializeObject(meeting);
